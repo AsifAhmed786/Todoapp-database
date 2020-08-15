@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="blue">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Todo App (Makes Life Easier</title>
+</head>
+<body>
+    <br>
+    <div id="maindiv">
+        <div id="title">
+            <p id="para1">Todo App (Make Life Easier)</p>
+
+        </div>
+        <div id="bot">
+            <img src="image/icons/add.png" onclick="addTask()" alt="" id="add">
+        </div>
+        <div class="taskdiv">
+            <table id="task1">                
+            </table>
+        </div>
+    </div>
+
+    <p class="mt-2 text-center para2">Select Theme</p>
+    <div class="text-center thumdiv">       
+        <img src="image/1.jpg" onclick="changeTheme(this)" class="thumbnail" alt="">
+        <img src="image/2.jpg" onclick="changeTheme(this)" class="thumbnail" alt="">
+        <img src="image/3.jpg" onclick="changeTheme(this)" class="thumbnail" alt="">
+        <img src="image/4.jpg" onclick="changeTheme(this)" class="thumbnail" alt="">        
+    </div>
+    <br>
+    <script src='app.js'></script>
+</body>
+</html>

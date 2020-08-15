@@ -6,9 +6,32 @@
     <meta name="theme-color" content="blue">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAwATSJsH59Q28ZQoeOWj0FtsBfbYJn5JI",
+            authDomain: "todoapp-database-64019.firebaseapp.com",
+            databaseURL: "https://todoapp-database-64019.firebaseio.com",
+            projectId: "todoapp-database-64019",
+            storageBucket: "todoapp-database-64019.appspot.com",
+            messagingSenderId: "258283778745",
+            appId: "1:258283778745:web:eca20f093601295bdbe168"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
     <title>Todo App (Makes Life Easier</title>
 </head>
+
 <body>
     <br>
     <div id="maindiv">
@@ -17,22 +40,24 @@
 
         </div>
         <div id="bot">
-            <img src="image/icons/add.png" onclick="addTask()" alt="" id="add">
+            <i class="fa fa-plus-circle options" onclick="addTask()" aria-hidden="true"> Add Task</i><i class="fa fa-minus-circle options" onclick="removeAll()" aria-hidden="true"> Remove All</i>
+            <!-- <img src="image/icons/add.png" onclick="addTask()" alt="" id="add"> -->
         </div>
         <div class="taskdiv">
-            <table id="task1">                
+            <table id="task1">
             </table>
         </div>
     </div>
 
     <p class="mt-2 text-center para2">Select Theme</p>
-    <div class="text-center thumdiv">       
+    <div class="text-center thumdiv">
         <img src="image/1.jpg" onclick="changeTheme(this)" class="thumbnail" alt="">
         <img src="image/2.jpg" onclick="changeTheme(this)" class="thumbnail" alt="">
         <img src="image/3.jpg" onclick="changeTheme(this)" class="thumbnail" alt="">
-        <img src="image/4.jpg" onclick="changeTheme(this)" class="thumbnail" alt="">        
+        <img src="image/4.jpg" onclick="changeTheme(this)" class="thumbnail" alt="">
     </div>
     <br>
     <script src='app.js'></script>
 </body>
+
 </html>

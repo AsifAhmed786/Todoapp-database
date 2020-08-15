@@ -9,7 +9,7 @@
 }
 #add{
     border-radius: 50px;
-    width: 15%;
+    width: 10%;
     margin: 0 auto;
     margin-bottom: 20px;
 }
@@ -83,4 +83,13 @@ tr{
 .date1{
     font-size: 10px !important;
     font-style: italic;
+}
+.hidden{
+    display: none;
+}
+.options{
+    font-size: 15px;
+    color: white;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
